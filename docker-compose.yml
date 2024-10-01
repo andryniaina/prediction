@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile  # Specify your Dockerfile if it's not named 'Dockerfile'
     ports:
-      - "8000:80"  # Map host port 8000 to container port 80
+      - "8000:8000"  # Map host port 8000 to container port 80
     environment:
       - ENV_VAR_NAME=value  # Add any environment variables your app may need
     restart: unless-stopped  # Restart policy for the container
